@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ActIon 개인정보처리방침</title>
+<style>
+  body { font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.7;
+         color: #1a1a1a; background: #fff; }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 32px; border-top: 1px solid #eee; padding-top: 20px; }
+  .meta { color: #888; font-size: 13px; margin-bottom: 24px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f6f6f6; }
+  ul { padding-left: 20px; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  a { color: #0a58ca; }
+</style>
+</head>
+<body>
+
+<h1>ActIon 개인정보처리방침</h1>
+<p class="meta">시행일: 2026년 7월 11일 · 최종 수정: 2026년 7월 11일</p>
+
+<p>ActIon(이하 "회사" 또는 "앱")은 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 방침은 ActIon 앱이 어떤 정보를 수집하고 어떻게 이용·보관·처리하는지 설명합니다.</p>
+
+<h2>1. 수집하는 정보</h2>
+<p>ActIon은 <strong>회원가입 없이</strong> 이용할 수 있으며, 이름·이메일 등 계정 정보를 수집하지 않습니다. 앱 기능 이용 과정에서 다음 정보가 처리됩니다.</p>
+<table>
+  <tr><th>구분</th><th>내용</th><th>처리 방식</th></tr>
+  <tr>
+    <td>촬영 영상·이미지</td>
+    <td>연기 분석을 위해 촬영한 얼굴·연기 영상 및 추출된 정지 이미지(프레임)</td>
+    <td>AI 분석 목적으로 서버를 경유해 전송, 분석 후 서버에 저장하지 않음</td>
+  </tr>
+  <tr>
+    <td>음성·발화 텍스트</td>
+    <td>발음(딕션) 연습 시 마이크 음성 및 이를 변환한 텍스트</td>
+    <td>기기 및 운영체제(Apple)의 음성 인식 기능으로 처리</td>
+  </tr>
+  <tr>
+    <td>연습 대사·설정</td>
+    <td>이용자가 입력하거나 선택한 대사, 목표 감정, 설정값</td>
+    <td>AI 대사 음성 생성·분석에 사용</td>
+  </tr>
+  <tr>
+    <td>연습 기록</td>
+    <td>훈련 점수, 모듈, 일시 등 연습 이력</td>
+    <td><strong>이용자 기기 내부에만</strong> 저장(서버 미전송)</td>
+  </tr>
+  <tr>
+    <td>구매·구독 정보</td>
+    <td>구독 상태, 익명 구매 식별자, 영수증 정보</td>
+    <td>결제 처리 및 구독 상태 확인 목적</td>
+  </tr>
+  <tr>
+    <td>기기·이용 정보</td>
+    <td>앱 오류 로그, 기기 유형 등 기술 정보</td>
+    <td>서비스 품질 개선·오류 진단</td>
+  </tr>
+</table>
+
+<h2>2. 정보의 이용 목적</h2>
+<ul>
+  <li>AI 기반 연기·발음·감정·매체연기 분석 및 피드백 제공</li>
+  <li>AI 상대역·감독 음성 등 연습용 오디오 생성</li>
+  <li>구독 결제 처리 및 이용 권한(무제한/무료 체험) 관리</li>
+  <li>서비스 오류 진단 및 품질 개선</li>
+</ul>
+
+<h2>3. 제3자 처리 위탁 (AI·결제 처리자)</h2>
+<p>AI 분석·음성 생성·결제 기능을 위해 다음 사업자에게 필요한 범위에서 정보 처리를 위탁합니다. 각 사업자는 자체 개인정보처리방침에 따라 정보를 처리합니다.</p>
+<table>
+  <tr><th>수탁자</th><th>처리 목적</th><th>전송 정보</th></tr>
+  <tr><td>Anthropic (Claude)</td><td>영상·이미지 기반 연기 분석 및 텍스트 피드백 생성</td><td>촬영 프레임 이미지, 대사·설정 텍스트</td></tr>
+  <tr><td>ElevenLabs</td><td>AI 상대역·감독 음성(TTS) 생성</td><td>대사·지시 텍스트</td></tr>
+  <tr><td>Cloudflare</td><td>AI 요청 중계 서버(프록시) 운영</td><td>위 요청 데이터의 경유 전송(별도 저장하지 않음)</td></tr>
+  <tr><td>RevenueCat</td><td>구독 상태 관리</td><td>익명 구매 식별자, 구독·영수증 정보</td></tr>
+  <tr><td>Apple</td><td>인앱 결제 처리 및 음성 인식</td><td>결제 정보, 음성 인식 요청</td></tr>
+</table>
+<p>※ 위 사업자 중 일부는 국외(미국 등)에 소재하며, 서비스 제공을 위해 정보가 국외로 이전될 수 있습니다.</p>
+
+<h2>4. 보관 및 파기</h2>
+<ul>
+  <li><strong>촬영 영상·프레임</strong>: 분석 요청 처리에만 사용되며, 회사 서버에 별도 저장하지 않습니다. 원본 영상은 이용자 기기에 저장되며 이용자가 직접 삭제할 수 있습니다.</li>
+  <li><strong>연습 기록·구독 상태</strong>: 이용자 기기 내부에 저장되며, 앱 삭제 시 함께 삭제됩니다.</li>
+  <li>법령에 따라 보관이 필요한 결제 관련 정보는 해당 처리자(Apple 등)의 정책에 따라 보관될 수 있습니다.</li>
+</ul>
+
+<h2>5. 이용자의 권리</h2>
+<ul>
+  <li>카메라·마이크·음성 인식 권한은 기기 설정에서 언제든 철회할 수 있습니다(해당 기능은 제한됨).</li>
+  <li>앱을 삭제하면 기기에 저장된 연습 기록 등 모든 로컬 데이터가 삭제됩니다.</li>
+  <li>구독 관리·해지는 App Store의 구독 설정에서 직접 하실 수 있습니다.</li>
+</ul>
+
+<h2>6. 카메라·마이크 권한 고지</h2>
+<p>ActIon은 연기·발음 연습 촬영 및 분석을 위해 카메라·마이크·음성 인식 권한을 사용합니다. 이 권한은 이용자가 직접 연습을 시작할 때만 사용되며, 백그라운드에서 임의로 녹화·녹음하지 않습니다.</p>
+
+<h2>7. 아동의 개인정보</h2>
+<p>ActIon은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+<h2>8. 방침의 변경</h2>
+<p>본 방침은 법령·서비스 변경에 따라 개정될 수 있으며, 개정 시 앱 또는 본 페이지를 통해 공지합니다.</p>
+
+<h2>9. 문의처</h2>
+<p>개인정보 관련 문의: <a href="mailto:fromkorea1@gmail.com">fromkorea1@gmail.com</a></p>
+
+</body>
+</html>
