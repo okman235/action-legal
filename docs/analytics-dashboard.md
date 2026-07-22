@@ -44,6 +44,19 @@ PostHog  ──(Personal API Key, 로컬에서만)──▶  fetch-posthog.mjs  
 
 > 정기 갱신을 원하면 이 명령을 cron이나 GitHub Actions(시크릿에 키 저장)로 돌리면 됩니다.
 
+## 자동 갱신 (GitHub Actions) — 권장
+
+`.github/workflows/refresh-analytics.yml` 이 이미 들어 있습니다. **시크릿 1개만 넣으면** 매일 자동으로 실데이터를 받아 `analytics/data/ssamcam.json` 을 갱신·커밋합니다. (읽기 키는 코드/사이트에 안 들어가고 GitHub 시크릿에만 저장)
+
+설정 (한 번만):
+1. PostHog → **Settings → Personal API keys** 에서 읽기용 키 발급 (스코프: `query:read` + 해당 프로젝트 읽기).
+2. GitHub 저장소 → **Settings → Secrets and variables → Actions → New repository secret**
+   - 이름: `POSTHOG_PERSONAL_API_KEY`, 값: 발급한 `phx_...` 키
+   - (다른 프로젝트면 **Variables** 탭에 `POSTHOG_PROJECT_ID` 도 추가)
+3. **Actions 탭 → "Refresh analytics data" → Run workflow** 로 즉시 첫 갱신 실행.
+
+이후 매일 03:17(KST) 자동 실행됩니다. 실행 즉시 `data/ssamcam.json` 이 실데이터로 바뀌고 대시보드의 "샘플" 배너가 사라집니다.
+
 ## 새 앱 추가
 
 1. `analytics/apps.config.js` 의 `ANALYTICS_APPS` 에 항목 추가:
